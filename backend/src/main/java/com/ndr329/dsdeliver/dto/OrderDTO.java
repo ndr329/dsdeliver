@@ -9,6 +9,18 @@ import java.util.stream.Collectors;
 import com.ndr329.dsdeliver.entities.Order;
 import com.ndr329.dsdeliver.entities.OrderStatus;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({
+    "id",
+    "address",
+    "latitude",
+    "longitude",
+    "moment",
+    "status",
+    "products"
+})
+
 public class OrderDTO implements Serializable {
 	
 	private static final long serialVersionUID = 1L;

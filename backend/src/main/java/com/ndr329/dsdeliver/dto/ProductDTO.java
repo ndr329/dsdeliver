@@ -4,6 +4,16 @@ import java.io.Serializable;
 
 import com.ndr329.dsdeliver.entities.Product;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({
+    "id",
+    "name",
+    "price",
+    "description",
+    "imageUri"
+})
+
 public class ProductDTO implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
